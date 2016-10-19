@@ -44,9 +44,9 @@ class boarding(traininfo):
         self.tname=""
         self.tno=0
         self.date=""
-        self.avseatsT1=0
-        self.avseatsT2=0
-        self.avseatsT3=0
+        self.avseatsT1=traininfo.nosT1
+        self.avseatsT2=traininfo.nosT2
+        self.avseatsT3=traininfo.nosT3
  
  
     def indata2(self):
