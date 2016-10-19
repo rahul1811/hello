@@ -38,3 +38,52 @@ class traininfo:
             print " data enrolled in file "
 s= traininfo()
 s.infoin()
+class boarding:
+    def __init__(self):
+        self.tname=""
+        self.tno=0
+        self.date=""
+        self.avseatsT1=0
+        self.avseatsT2=0
+        self.avseatsT3=0
+ 
+ 
+    def indata2(self):
+        self.tname=raw_input("enter the train name")
+        self.tno=int(raw_input("enter the train name"))
+        self.date=raw_input("enter the date")
+        self.avseatsT1=int(raw_input("enter the no of seats required"))
+        self.avseatsT2=int(raw_input("enter the no of seats required"))
+        self.avseatsT3=int(raw_input("enter the  no of seats required"))
+ 
+    def display2(self):
+        print "train name : ",self.tname
+        print "train number : ",self.tno
+        print "train available dates : ",self.date
+        print "train avseats in T1: ",self.avseatsT1
+        print "train  avseats in T2: ",self.avseatst2
+        print "train  avseats in T3: ",self.avseatst3
+       
+class reservation:
+    def __init__(self):
+        self.tname=""
+        self.date=""
+        self.reqseats=0
+ 
+    def indata3(self):
+        self.tname=raw_input("enter the train name")
+        self.date=raw_input("enter the date")
+        self.reqseats=print "train name : ",self.tname
+        print "train number : ",self.tno
+        print "train available dates : ",self.date
+ 
+   def display3(self):
+       print "train name : ",self.tname
+        print "train available dates : ",self.date
+        print "required trains are:",self.reqseats
+ 
+file1=open("traininfo.txt","r")
+ 
+file2=open("bookdetails.txt" , "w")
+ 
+def userinfo:
