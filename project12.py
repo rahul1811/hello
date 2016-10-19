@@ -38,8 +38,9 @@ class traininfo:
             print " data enrolled in file "
 s= traininfo()
 s.infoin()
-class boarding:
+class boarding(traininfo):
     def __init__(self):
+        traininfo.__init__(self)
         self.tname=""
         self.tno=0
         self.date=""
@@ -52,9 +53,7 @@ class boarding:
         self.tname=raw_input("enter the train name")
         self.tno=int(raw_input("enter the train name"))
         self.date=raw_input("enter the date")
-        self.avseatsT1=int(raw_input("enter the no of seats required"))
-        self.avseatsT2=int(raw_input("enter the no of seats required"))
-        self.avseatsT3=int(raw_input("enter the  no of seats required"))
+
  
     def display2(self):
         print "train name : ",self.tname
@@ -74,16 +73,28 @@ class reservation:
         self.tname=raw_input("enter the train name")
         self.date=raw_input("enter the date")
         self.reqseats=print "train name : ",self.tname
-        print "train number : ",self.tno
-        print "train available dates : ",self.date
+       
  
    def display3(self):
-       print "train name : ",self.tname
+        print "train name : ",self.tname
         print "train available dates : ",self.date
         print "required trains are:",self.reqseats
- 
-file1=open("traininfo.txt","r")
- 
-file2=open("bookdetails.txt" , "w")
+
  
 def userinfo:
+    def __init__(self):
+        self.username=""
+        self.age=0
+        self.adharno=0
+ 
+    def indata3(self):
+        self.tname=raw_input("enter the user name")
+        self.date=raw_input("enter the age")
+        self.adharno=int(raw_input("enter the adharno"))
+       
+ 
+   def display3(self):
+        print "user name : ",self.username
+        print " age : ",self.age
+        print "adharno :",self.adharno
+
